@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Música Usados</title>
+    <link href="estilo.css" rel="stylesheet"/>
+</head>
+<body>
+    <div class="cabeçalho">
+        <p>🎵Música Usados🎵</p>
+    </div>
+
+
+    <div class="menu">
+        <a class="ativo" href="#">💰VENDER💰</a>
+        <a href="#comprar">🤝COMPRAR🤝</a>
+    </div>
+
+
+    <div class="form">
+        <form name="cadastro de venda">
+            <fieldset>
+                <legend>📦 Cadastro de produtos 📦</legend>
+                <div class="form-group">
+                    <label class="rótulo">Código</label>
+                    <input class="campo" type="number" size="10" id="codigo">
+
+                    <label class="rótulo">Tipo de Instrumento</label>
+                    <input class="campo" type="text" size="10" id="tipo">
+
+                    <label class="rótulo">Marca</label>
+                    <input class="campo" type="text" size="10" id="marca">
+                </div>
+                <div class="form-group">
+                    <label class="rótulo">Modelo</label>
+                    <input class="campo" type="text" size="10" id="modelo">
+                
+                    <label class="rótulo">Preço de Venda(R$)</label>
+                    <input class="campo" type="number" size="10" step="any" id="preço">
+
+                    <label class="rótulo">Tempo de Uso</label>
+                    <input class="campo" type="text" size="10" id="tempo">
+                </div>
+                <div class="form-group">
+                    <label class="rótulo">Seu Lucro(5% do valor vão para o site)</label>
+                    <input class="campo" type="number" size="10" id="lucro" disabled>
+                </div>    
+                <div class="form-group">
+                    <label></label>
+                    <button class="salvar" id="salvar">💾 SALVAR</button>
+                    <button class="cancelar" id="cancelar">✖️ CANCELAR</button>
+                </div>
+            </fieldset>
+        </form>
+
+    </div>
+    <div id="listagem">
+        <script src="tabela.js"></script>
+    </div>
+</body>
+</html>
